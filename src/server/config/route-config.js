@@ -10,12 +10,14 @@
     const userRoute = require('../routes/users');
     //route for restaurants.js
     const restaurantRoute = require('../routes/restaurants');
-
+    //route for reviews.js
+    const reviewRoute = require('../routes/reviews');
 
     // *** register routes *** //
     app.use('/', routes);
     app.use('/users', userRoute);
     app.use('/restaurants', restaurantRoute);
+    app.use('/restaurants/:restID/reviews', reviewRoute);
 
   };
 

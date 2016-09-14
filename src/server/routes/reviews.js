@@ -1,8 +1,12 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 
-router.get('/', (req, res, next) => {
-  res.render('users/login');
+router.get('/new', (req, res, next) => {
+  res.render('restaurants/reviews/add-review');
+});
+
+router.get('/edit', (req, res, next) => {
+  res.render('restaurants/reviews/edit-review');
 });
 
 module.exports = router;

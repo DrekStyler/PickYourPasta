@@ -20,9 +20,39 @@
     </div>
   </nav>
 <!-- main content -->
-  <div class="container">
-    <h1>Restaurant Stuff</h1>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="reviewText" class="col-sm-2 control-label">Your Review</label>
+    <div class="col-sm-8">
+      <textarea class="form-control" id="reviewText" placeholder="Tell us about your experience at this restaurant" rows=4></textarea>
+    </div>
   </div>
+  <div class="form-group">
+    <label for="rating" class="col-sm-2 control-label">Rating</label>
+    <div class="col-sm-8 rating">
+      <label class="radio-inline">
+        <input type="radio" name="ratingOptions" id="rating1" value=1> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="ratingOptions" id="rating2" value=2> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="ratingOptions" id="rating3" value=3> 3
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="ratingOptions" id="rating4" value=4> 4
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="ratingOptions" id="rating5" value=5> 5
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-default">Submit Your Review</button>
+    </div>
+  </div>
+</form>
 <!-- footer -->
 <footer id="footer">
   <p>&copy; Pick Your Pasta</p>
