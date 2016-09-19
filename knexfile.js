@@ -3,7 +3,7 @@ const databaseName = 'Pasta';
 module.exports = {
   development: {
     client: 'postgresql',
-    connection: `postgres://process.env.heroku_url/${databaseName}`,
+    connection: `postgres://localhost:5432/${databaseName}`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
@@ -13,12 +13,21 @@ module.exports = {
   },
   test: {
     client: 'postgresql',
-    connection: `postgres://process.env.heroku_url/${databaseName}_test`,
+    connection: `postgres://localhost:5432/${databaseName}_test`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
     seeds: {
       directory: __dirname + '/src/server/db/seeds'
     }
-  }
+  },
+  production: {
+    client: 'postgresql',
+    connection: `postgres://pickyourpasta.herokuapp.com/${databaseName}`,
+    migrations: {
+      directory: __dirname + '/src/server/db/migrations'
+    },
+    seeds: {
+      directory: __dirname + '/src/server/db/seeds'
+    }
 };
