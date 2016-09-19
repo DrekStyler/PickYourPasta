@@ -23,7 +23,7 @@ module.exports = {
   },
   production: {
     client: 'postgresql',
-    connection: `pickyourpasta.herokuapp.com`,
+    connection: `postgresql-pointy-86785`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
