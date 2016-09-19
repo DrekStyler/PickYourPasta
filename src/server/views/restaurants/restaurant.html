@@ -29,8 +29,8 @@
                   <td>{{employee.first_name}}</td>
                   <td>{{employee.last_name}}</td>
                   <td>{{employee.title}}</td>
-                  <td><button class="btn-small btn-danger" data-id='{{employee.id}}' id='employee_delete'>Delete</button></td>
-                  <td><a href="/restaurants/{{restaurants.id}}/employees/{{employee.id}}/edit"<button class="btn-small btn-primary" data-id='{{employee.id}}' id='employee_edit'>Edit</button></td>
+                  <td><button class="btn-sm btn-danger btn" data-id='{{employee.id}}' id='employee_delete'>Delete</button></td>
+                  <td><a href="/restaurants/{{restaurants.id}}/employees/{{employee.id}}/edit"<button class="btn-sm btn-primary btn" data-id='{{employee.id}}' id='employee_edit'>Edit</button></td>
               </tr>
             {% endif %}
           {% endfor %}
